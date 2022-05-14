@@ -5,6 +5,10 @@
 export const environment = {
   production: false,
   SANDBOX_API: 'https://sandbox.iexapis.com/stable',
+  IEX_BASE_URL: 'https://cloud.iexapis.com/stable',
+  PORTFOLIO_URI: 'http://localhost:3000/portfolios',
+  IEX_TEST_TOKEN: 'Tpk_e370cc9230a611e9958142010a80043c',
+  IEX_DEV_TOKEN: 'pk_40c6c71966a445cca7038a5445fd54a0'
 };
 
 /*

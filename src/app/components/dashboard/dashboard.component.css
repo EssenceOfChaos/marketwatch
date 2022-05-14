@@ -1,0 +1,7 @@
+.grid-container {
+  margin: 20px;
+}
+mat-card {
+  min-height: 160px;
+  min-width: 225px;
+}

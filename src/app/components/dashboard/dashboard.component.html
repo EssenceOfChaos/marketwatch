@@ -1,0 +1,27 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Dashboard</h1>
+  <mat-grid-list cols="4" rowHeight="4:3">
+    <mat-grid-tile *ngFor="let sector of sectors">
+      <mat-card
+      [ngStyle]="{
+        border: sector.performance < 0 ? '1px solid red' : '1px solid green'
+      }"
+      >
+        <mat-card-header>
+          <mat-card-title>{{sector.type}}</mat-card-title>
+          <mat-card-subtitle>{{sector.name}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            {{ sector.performance | percent: '1.2-4' }}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          {{ sector.lastUpdated | date: 'medium' }}
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+
